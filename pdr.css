@@ -1,0 +1,140 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #A3BCB6;    
+  --ice: #D9EEF2;     
+  --teal: #008EAA;    
+}
+
+body { font-family: var(--font-roboto, system-ui, Arial, sans-serif); color: var(--teal); }
+
+.td{
+  width: 100%;
+  min-height: 110dvh;
+  height: 140vh;
+  background: var(--bg);
+}
+
+
+header{
+  background: var(--ice);
+  display: flex;
+  flex-direction: column;        
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.tt{ height: 60px; max-width: 100%; }
+
+.fc{
+  display: flex;
+  flex-direction: column;        
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.fc a,
+.cnt,.hm,.qm,.pr,.pd,.ct,.cd {
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  color: var(--teal);
+  display: inline-block;
+  margin: 0;                    
+}
+
+.dp{                               
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-size: clamp(24px, 8vw, 40px);
+  margin: 24px 16px 8px;
+  text-align: center;
+}
+
+.oq{                            
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-size: clamp(12px, 3.8vw, 16px);
+  margin: 0 16px 24px; 
+  text-align: center;
+}
+
+.psq{                             
+  width: 100%;
+  max-width: 480px;
+  height: 44px;
+  border-radius: 20px;
+  border: 0;
+  background: var(--teal);
+  color: var(--ice);
+  padding: 0 16px;
+  margin: 8px auto 16px;
+  display: block;
+}
+
+
+.pdt{
+  background: var(--ice);
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  border-radius: 12px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: top;
+  min-height: 350px;
+}
+
+.dc{
+  font-size: x-large;
+  text-align: center;
+}
+
+.pç{
+  font-size: x-large;
+  font-weight: 500;
+  margin-top: auto; }
+
+.emj,
+.avl{
+  margin-top: auto;
+  cursor: pointer;
+  text-decoration: none;
+}
+.pcs{
+  width: 40%;
+  margin-left: 30%;
+}
+
+
+@media (min-width: 550px) and (max-width: 1100px) {
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+  }
+
+  .fc{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    width: auto;
+  }
+
+  .pdt{ max-width: 500px; min-height: 400px; }
+}
+
+@media (min-width: 1101px) {
+  header{ padding: 16px 48px; }
+  .fc{ gap: 24px; }
+
+  .pdt{ max-width: 600px; min-height: 450px; }
+}

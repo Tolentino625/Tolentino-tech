@@ -1,0 +1,210 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #A3BCB6;
+  --ice: #D9EEF2;
+  --teal: #008EAA;
+}
+
+
+body { font-family: "Questrial", sans-serif; color: var(--teal); }
+
+.td{
+  width: 100%;
+  min-height: 100dvh;
+  background: var(--bg);
+  margin-top: -5vh;
+}
+
+header{
+  background: var(--ice);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.tt{ height: 48px; max-width: 100%; }
+
+.fc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.fc a,
+.cnt,.hm,.qm,.pr,.pd,.ct,.cd {
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  color: var(--teal);
+  display: inline-block;
+  margin: 0;
+}
+
+.dp{
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-size: clamp(24px, 8vw, 40px);
+  margin: 24px 16px 8px;
+  text-align: center;
+}
+
+.oq{
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-size: clamp(12px, 3.8vw, 16px);
+  margin: 0 16px 16px;
+  text-align: center;
+}
+
+.psq{
+  width: 100%;
+  max-width: 480px;
+  height: 44px;
+  border-radius: 20px;
+  border: 0;
+  background: var(--teal);
+  color: var(--ice);
+  padding: 0 16px;
+  margin: 8px auto 16px;
+  display: block;
+}
+
+.prd{
+  margin: 32px auto 16px;
+  text-align: center;
+  font-size: clamp(24px, 7vw, 40px);
+  color: var(--teal);
+}
+
+.p1, .p2{
+  background: var(--ice);
+  width: 100%;
+  min-height: 160px;
+  margin: 12px auto;
+  border-radius: 12px;
+  padding: 16px;
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+
+.rd{
+  background: var(--ice);
+  width: 100%;
+  padding: 24px 16px;
+  margin-top: 32px;
+}
+
+.tt1{ width: 250px;; max-width: 100%; margin: 16px 0; }
+
+.links{
+  font-size: clamp(16px, 3.5vw, 20px);
+  color: var(--teal);
+  text-align: center;
+  margin: 8px 0 16px;
+}
+
+.bt{ text-decoration: none; color: var(--teal); }
+
+#Formulario_rodape{
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#email_rodape {
+  flex: 1 1 260px;
+  height: 44px;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 6px;
+  color: #5C6168;
+  background: var(--teal);
+}
+
+#Botao_envio {
+  height: 44px;
+  padding: 0 16px;
+  background: var(--bg);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ct{
+  position: static;
+  color: var(--teal);
+  text-align: center;
+  margin-top: 8px;
+}
+
+
+@media (min-width: 550px) and (max-width: 1100px) {
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+  }
+
+  .fc{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    width: auto;
+  }
+
+  .dp{ font-size: clamp(28px, 5vw, 44px); }
+  .oq{ font-size: clamp(13px, 2.6vw, 18px); }
+
+  .prd{ font-size: clamp(28px, 5vw, 44px); }
+
+
+  .p1, .p2{
+    width: 45%;
+    margin: 2%;
+  }
+}
+
+
+@media (min-width: 1101px) {
+  header{ padding: 16px 48px; }
+  .fc{ gap: 24px; }
+
+  .dp{ font-size: clamp(36px, 4vw, 56px); }
+  .oq{ font-size: clamp(14px, 1.6vw, 20px); }
+  .prd{ font-size: clamp(32px, 3.5vw, 52px); }
+
+  .p1, .p2{ width: 18%; margin: 1%; }
+
+  #Formulario_rodape{ justify-content: flex-start; }
+}
+.s24{
+  width: 50%;
+  margin-left: 20%;
+}
+.pç{
+  font-size: x-large;
+  font-weight: 500;
+}
+.s25{
+  width: 70%;
+  align-items: center;
+}
+.s2{
+  text-decoration: none;
+  color: #008EAA;
+}
